@@ -52,6 +52,9 @@ implement {a}{vt} list_vt_foreach_funenv{fe}{t1,s1}{v}{n}{t,s}( O, pf | ls, f, e
                     )
       ):<> void
   }
+  prval () = prop_verify {n >= 0} ()
+  prval () = prop_verify {t1 >= 0} ()
+  prval () = prop_verify {s1 >= 0} ()
   prval _ = believeme() where {
     extern praxi
       believeme
