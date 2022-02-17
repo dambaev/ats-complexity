@@ -35,23 +35,3 @@ fn
   ( !O( 0, 0) >> [time,space:nat] O( time, space)
   |
   ): void
-
-fn
-  {a:viewt0ype}
-  list_vt_cons_
-  {t, s: nat}
-  {n: nat}
-  ( O: !O(t, s) >> O(t, s + 1)
-  | elem: a
-  , ls: list_vt( a, n)
-  ):<>
-  list_vt( a, n + 1)
-fn
-  {a:t0ype}
-  list_vt_free
-  {n:nat}
-  {t,s: nat}
-  ( O: !O( t, s) >> O( t + n, s)
-  | ls: list_vt( a, n)
-  ):<!wrt>
-  void
