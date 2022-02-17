@@ -676,7 +676,10 @@ fun
        , !INV(vt)
        ) -<fe> void
   , env: !vt
-  ) :<fe,!wrt> void // end of [list_vt_foreach_funenv]
+  ) :<fe,!wrt>
+  [ n * t1 >= 0]
+  [ n * s1 >= 0]
+  void // end of [list_vt_foreach_funenv]
 //
 (* ****** ****** *)
 (* ****** ****** *)
