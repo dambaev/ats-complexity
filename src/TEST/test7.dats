@@ -19,7 +19,7 @@ fn
   void = {
   prval pf = unit_v
   prval _ = $showtype r
-  val () = list_vt_foreach_funenv{effall}{ln,0}{..}{rn}
+  val () = list_vt_foreach_funenv{effall}{ln,0}
     ( O
     , pf
     | r
@@ -34,7 +34,7 @@ fn
       , env: !list_vt(int, ln)
       ):<1> void = {
         val env1 = (unit_v | vx)
-        val () = list_vt_foreach_funenv{effall}{0,0}{..}{ln}
+        val () = list_vt_foreach_funenv{effall}{0,0}
           ( O
           , pf
           | env
@@ -56,7 +56,7 @@ fn
       }
   }
   val env1 = (unit_v | 0)
-  val () = list_vt_foreach_funenv{effall}{0,0}{..}{rn} // t + rn
+  val () = list_vt_foreach_funenv{effall}{0,0} // t + rn
     ( O
     , pf
     | r
